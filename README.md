@@ -1,1 +1,1 @@
-Micro service application foe online shop
+Micro service application for online shop
