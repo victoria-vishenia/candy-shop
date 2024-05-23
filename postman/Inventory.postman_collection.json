@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "621c7594-05aa-44e2-a19a-6dd53d0bae76",
+		"name": "Inventory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32973137"
+	},
+	"item": [
+		{
+			"name": "Inventory List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJNZl9PZFBnd2tSQ1JiV0haMWFUSFJJeklrSlZHeE05WTV4aFkzMF9sVkVNIn0.eyJleHAiOjE3MTI1Njg1MDUsImlhdCI6MTcxMjU2ODIwNSwianRpIjoiZGE0ZWJmYjMtZWFkYS00ZGUxLWE1MzItNTJjMzM1Y2Q1Y2JiIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy9jYW5keS1zaG9wLXJlYWxtIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjdkYzliYTVjLWE5NTctNDY5Yi05Y2M1LWYxOWI1NDI5ZTFhOSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImNhbmR5LXNob3AtY2xpZW50Iiwic2Vzc2lvbl9zdGF0ZSI6IjVhNjhjMDVjLTg3MTAtNDA3Yy04Y2ZmLWFlZWEzMTJmYmQ1OSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1jYW5keS1zaG9wLXJlYWxtIiwiUk9MRV9BRE1JTiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19LCJjYW5keS1zaG9wLWNsaWVudCI6eyJyb2xlcyI6WyJST0xFX0FETUlOIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwic2lkIjoiNWE2OGMwNWMtODcxMC00MDdjLThjZmYtYWVlYTMxMmZiZDU5IiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInByZWZlcnJlZF91c2VybmFtZSI6InZpa3RvcmlhLnZpIiwic2VjdXJpdHlfcm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWNhbmR5LXNob3AtcmVhbG0iLCJST0xFX0FETUlOIiwidW1hX2F1dGhvcml6YXRpb24iXSwiZW1haWwiOiJ2aXZpQGdtYWlsLmNvbSJ9.g9zZB8xff-HRVAQWCCtDdrrueVufELH0P_ZmoNqVouGdNQuMTam5OhDw-E5XM72tPvk8ItlR6Xx7eIw4CoYO-6ejIa4aP_sKWFk1_uxql97TQ6e9WH9Ovke1D4FdT9Pn1RoKrJurxdbtzI23eIvPxlqOVjX1l2I2gnZR_bN_hMR7yxtpeM283W6E-na8i93fFsmDd0Tsf5cxelmOGCjxWpP7IJNWENl4-KK_NeYQtG8Wfln-O3B65IE0LDXRgQgdNtuxa15Qwp9Y7KYH3u7yG6W5YFEST5j_Tizv4K8n9oqrG_aDrQFgnkpaJ-AXpm_ff6ATLmHhqzQf6sck21u9Vw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/inventory/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"inventory",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by inv code",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJNZl9PZFBnd2tSQ1JiV0haMWFUSFJJeklrSlZHeE05WTV4aFkzMF9sVkVNIn0.eyJleHAiOjE3MTI1Njg1MDUsImlhdCI6MTcxMjU2ODIwNSwianRpIjoiZGE0ZWJmYjMtZWFkYS00ZGUxLWE1MzItNTJjMzM1Y2Q1Y2JiIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy9jYW5keS1zaG9wLXJlYWxtIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjdkYzliYTVjLWE5NTctNDY5Yi05Y2M1LWYxOWI1NDI5ZTFhOSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImNhbmR5LXNob3AtY2xpZW50Iiwic2Vzc2lvbl9zdGF0ZSI6IjVhNjhjMDVjLTg3MTAtNDA3Yy04Y2ZmLWFlZWEzMTJmYmQ1OSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1jYW5keS1zaG9wLXJlYWxtIiwiUk9MRV9BRE1JTiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19LCJjYW5keS1zaG9wLWNsaWVudCI6eyJyb2xlcyI6WyJST0xFX0FETUlOIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwic2lkIjoiNWE2OGMwNWMtODcxMC00MDdjLThjZmYtYWVlYTMxMmZiZDU5IiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInByZWZlcnJlZF91c2VybmFtZSI6InZpa3RvcmlhLnZpIiwic2VjdXJpdHlfcm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWNhbmR5LXNob3AtcmVhbG0iLCJST0xFX0FETUlOIiwidW1hX2F1dGhvcml6YXRpb24iXSwiZW1haWwiOiJ2aXZpQGdtYWlsLmNvbSJ9.g9zZB8xff-HRVAQWCCtDdrrueVufELH0P_ZmoNqVouGdNQuMTam5OhDw-E5XM72tPvk8ItlR6Xx7eIw4CoYO-6ejIa4aP_sKWFk1_uxql97TQ6e9WH9Ovke1D4FdT9Pn1RoKrJurxdbtzI23eIvPxlqOVjX1l2I2gnZR_bN_hMR7yxtpeM283W6E-na8i93fFsmDd0Tsf5cxelmOGCjxWpP7IJNWENl4-KK_NeYQtG8Wfln-O3B65IE0LDXRgQgdNtuxa15Qwp9Y7KYH3u7yG6W5YFEST5j_Tizv4K8n9oqrG_aDrQFgnkpaJ-AXpm_ff6ATLmHhqzQf6sck21u9Vw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/inventory/find/Sosulka",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"inventory",
+						"find",
+						"Sosulka"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new inventory",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ3akNwM2xObjlRRDZuT3FwU2NZQXRKdE9YM3RHNFNjbklacXBCN0tSUG9jIn0.eyJleHAiOjE3MTM5NDk1OTUsImlhdCI6MTcxMzk0OTI5NSwianRpIjoiNzA4YTljNDUtNmFhNC00NmNlLWIyMGYtYWZkMjY3ZWYyNmEzIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy9jYW5keS1zaG9wLXJlYWxtIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjYwY2Y4NmUzLWNjMjMtNGNjYy1iYzc3LTU2ZTQzN2VjZTE5NyIsInR5cCI6IkJlYXJlciIsImF6cCI6ImNhbmR5LXNob3AtY2xpZW50Iiwic2Vzc2lvbl9zdGF0ZSI6IjliMjEzMmQ5LWE0NWQtNDQ4YS05M2Q2LThkYjlmZjAwOTMzMSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1jYW5keS1zaG9wLXJlYWxtIiwiUk9MRV9BRE1JTiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19LCJjYW5keS1zaG9wLWNsaWVudCI6eyJyb2xlcyI6WyJST0xFX0FETUlOIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwic2lkIjoiOWIyMTMyZDktYTQ1ZC00NDhhLTkzZDYtOGRiOWZmMDA5MzMxIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInByZWZlcnJlZF91c2VybmFtZSI6InZpa3RvcmlhLnZpIiwic2VjdXJpdHlfcm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWNhbmR5LXNob3AtcmVhbG0iLCJST0xFX0FETUlOIiwidW1hX2F1dGhvcml6YXRpb24iXSwiZW1haWwiOiJ2aXZpQGdtYWlsLmNvbSJ9.wf3lHIb4panEOdrw9xWC_wPaJ1gxbh8OcHd-dipPv2S9hy8IchMCwmIXCmMNuWnQOIBGyn35Q2xO5X95tTh-pYH0QkQPSJT7mLhwxBoj5w2dTkfziEzuVBRZcBefy4Fq84V8W6fL3nMis1UllEMZ8hrb20QsbgeCID99vDIq0ENStoRpFZN1V-hh3ERspipv7FVPxf6It3wdWQD-b3zCTKnS77YgQ8RF-_XTeATGFvmi-342MNvTsX_jfGYIRgqFHEDGuiaKSqJhJNSXJXYbPieScsDGkqkKG4-hIUUafBpXVXxfdfCA2o-3RDCrP2jyAJ6DuB0PMvnyrhyRIvlCOg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  [\r\n  {\r\n        \"invCode\":\"Zefir\",\r\n        \"quantity\":2000,\r\n        \"price\":0.55\r\n    }\r\n  ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/inventory/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"inventory",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update inventory",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ3akNwM2xObjlRRDZuT3FwU2NZQXRKdE9YM3RHNFNjbklacXBCN0tSUG9jIn0.eyJleHAiOjE3MTM5NTQ3MTcsImlhdCI6MTcxMzk1NDQxNywianRpIjoiZTRmMWU3ODctMTQ2OS00MjJkLWEyNjctNWVhOWRjYmZmYmNiIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy9jYW5keS1zaG9wLXJlYWxtIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjYwY2Y4NmUzLWNjMjMtNGNjYy1iYzc3LTU2ZTQzN2VjZTE5NyIsInR5cCI6IkJlYXJlciIsImF6cCI6ImNhbmR5LXNob3AtY2xpZW50Iiwic2Vzc2lvbl9zdGF0ZSI6IjBlZTA3NDI1LWM5ZTMtNGViYS1hY2ZmLWRhMTkzMGM0ZmEyZCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1jYW5keS1zaG9wLXJlYWxtIiwiUk9MRV9BRE1JTiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19LCJjYW5keS1zaG9wLWNsaWVudCI6eyJyb2xlcyI6WyJST0xFX0FETUlOIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwic2lkIjoiMGVlMDc0MjUtYzllMy00ZWJhLWFjZmYtZGExOTMwYzRmYTJkIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInByZWZlcnJlZF91c2VybmFtZSI6InZpa3RvcmlhLnZpIiwic2VjdXJpdHlfcm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWNhbmR5LXNob3AtcmVhbG0iLCJST0xFX0FETUlOIiwidW1hX2F1dGhvcml6YXRpb24iXSwiZW1haWwiOiJ2aXZpQGdtYWlsLmNvbSJ9.pWEyNR8vQP8eDy5voylVX4e4p9pSGy_QKD0Y_zfxFfGGipFa8-fMYj-hyr3S1f8-cEPJC0wBwxA7nS1vBYtseH4-z4Fs7M5i6JyMgUEVcs0JKA9XYXSaCHAuIJsV8jVTJWkYsis5QwPqc3QKMG8ltrhcL297_wGCFs55ODC1WOmqE1agIa-hQpiUK-PCghZO2K0XxmxuhoIVyJ1dDA7rj0ZdoaCFV1lGdlKElf66I39HcRjyqYajbXeFqkl1Ut1zuvcns82xZmLMn4Q5aJI-0l2GthFPwv9glW2-z54InZC1A6YBDH3AO1g0wR2RrqiDO9nJ-JtTwWsFovpn8On6fg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  [\r\n {\r\n        \"invCode\": \"Chernomorochka\",\r\n        \"quantity\":178,\r\n        \"price\":1.1\r\n    },\r\n     {\r\n        \"invCode\": \"Alenka\",\r\n        \"quantity\":9450,\r\n        \"price\":3.23\r\n    },\r\n     {\r\n        \"invCode\": \"Sosulki\",\r\n        \"quantity\":2021,\r\n        \"price\":1.56\r\n    },\r\n     {\r\n        \"invCode\": \"Grylyazh\",\r\n        \"quantity\":2448,\r\n        \"price\":3.33\r\n    }\r\n  ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/inventory/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"inventory",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete inventory",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ3akNwM2xObjlRRDZuT3FwU2NZQXRKdE9YM3RHNFNjbklacXBCN0tSUG9jIn0.eyJleHAiOjE3MTM5Njg3NzEsImlhdCI6MTcxMzk2ODQ3MSwianRpIjoiYzhiMDVkMDYtMDBjYS00ZjhhLWJiYmMtMDI3ZjhiZWM3MDFmIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy9jYW5keS1zaG9wLXJlYWxtIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjYwY2Y4NmUzLWNjMjMtNGNjYy1iYzc3LTU2ZTQzN2VjZTE5NyIsInR5cCI6IkJlYXJlciIsImF6cCI6ImNhbmR5LXNob3AtY2xpZW50Iiwic2Vzc2lvbl9zdGF0ZSI6IjQ5YjhkMGQ3LTQ2ZjQtNDYwNi1hMGFlLWRmOWUzNTE4ZDc2OCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1jYW5keS1zaG9wLXJlYWxtIiwiUk9MRV9BRE1JTiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19LCJjYW5keS1zaG9wLWNsaWVudCI6eyJyb2xlcyI6WyJST0xFX0FETUlOIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwic2lkIjoiNDliOGQwZDctNDZmNC00NjA2LWEwYWUtZGY5ZTM1MThkNzY4IiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInByZWZlcnJlZF91c2VybmFtZSI6InZpa3RvcmlhLnZpIiwic2VjdXJpdHlfcm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWNhbmR5LXNob3AtcmVhbG0iLCJST0xFX0FETUlOIiwidW1hX2F1dGhvcml6YXRpb24iXSwiZW1haWwiOiJ2aXZpQGdtYWlsLmNvbSJ9.eYvEV5W7eLpYpI-8Ar-YxzZu0GBJMagGSjpWYatQkdEV0cdKKczcNMfVMP1LEDKSM0Gv1OpzyYb9eJdns-1WEfTAAQ93VNo4S1o0QxUELyxVjQM6jp0cW4T6CXfzmYBed1e5z01_Kr4SL_y_P-LgErZmJChkk4tLneCZrZOraxH8ljCkCnrNyE6VJ7oJ6xdvCRoXGPtBxT36arOE2bflVeOPOXinfJUDjjjz7vINuIcOa0Jf50-QT4odY2FQVXAnwrlBBc-6Sv0LuE_elaE8qYtc1N_iWRDvP85YhLjZCtFIOzpXFmSOeeH2PhwMNZt-NEFROQ_I1odxbW3UHkOV_Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"invCode\":\"NewChoco\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/inventory/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"inventory",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

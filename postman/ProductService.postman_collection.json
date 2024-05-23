@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "6a67f749-2b5a-4890-a836-bc4481ed6109",
+		"name": "ProductService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32973137"
+	},
+	"item": [
+		{
+			"name": "Find all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/product/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"product",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find by compound",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/product/get/chocolate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"product",
+						"get",
+						"chocolate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/product/candy-name/Alenka",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"product",
+						"candy-name",
+						"Alenka"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ3akNwM2xObjlRRDZuT3FwU2NZQXRKdE9YM3RHNFNjbklacXBCN0tSUG9jIn0.eyJleHAiOjE3MTM5NTU1MzUsImlhdCI6MTcxMzk1NTIzNSwianRpIjoiYWIyMThlMTItNjM5Yy00Mjc0LWIxZDItODljNGRjNmI0NTNkIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy9jYW5keS1zaG9wLXJlYWxtIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjYwY2Y4NmUzLWNjMjMtNGNjYy1iYzc3LTU2ZTQzN2VjZTE5NyIsInR5cCI6IkJlYXJlciIsImF6cCI6ImNhbmR5LXNob3AtY2xpZW50Iiwic2Vzc2lvbl9zdGF0ZSI6ImIwNzNlM2YxLWZiY2YtNDkyMi1iOWNlLWRkMzAwNjMwMzg3MSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1jYW5keS1zaG9wLXJlYWxtIiwiUk9MRV9BRE1JTiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19LCJjYW5keS1zaG9wLWNsaWVudCI6eyJyb2xlcyI6WyJST0xFX0FETUlOIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwic2lkIjoiYjA3M2UzZjEtZmJjZi00OTIyLWI5Y2UtZGQzMDA2MzAzODcxIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInByZWZlcnJlZF91c2VybmFtZSI6InZpa3RvcmlhLnZpIiwic2VjdXJpdHlfcm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWNhbmR5LXNob3AtcmVhbG0iLCJST0xFX0FETUlOIiwidW1hX2F1dGhvcml6YXRpb24iXSwiZW1haWwiOiJ2aXZpQGdtYWlsLmNvbSJ9.hCWXnajjmGKFEucb7f_tCWeGQt04rh0JKzyMaGFwsTmhbjEyh1jAg1Bgu_-HsU4f4OLDezrEeF634INEJ9RYL758KhV1yTxHAdVxCsfbm1xC_XOFhRQqDx7aV8amOpSeO0aFdAbQOZqcdU95dD1tkcNkiGAByDbL__eypxI79obi_FHkn7nZlFRFc6Ly4V4HSsSxPBbTsJaUpKge0WdQIcuR-9XRdtnls-9gKPL98UnqGp7fpinXHGD6ECI5nVJPftZnW0J-x4jaGeheL77jaIVLeYo6llrdJxqfuK1BeQCTJwhkA2I9tva_fctUp9ElcxI5VVMfe6PWc4kE9ZWIug",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " [\r\n {\r\n    \"name\":\"Sosulki\",\r\n    \"compound\":\"sugar, water\",\r\n    \"price\":1.35\r\n    },\r\n    {\r\n    \"name\":\"Gorky\",\r\n    \"compound\":\"choco, stones\",\r\n    \"price\":0.55\r\n    }\r\n\r\n ]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/product/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"product",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ3akNwM2xObjlRRDZuT3FwU2NZQXRKdE9YM3RHNFNjbklacXBCN0tSUG9jIn0.eyJleHAiOjE3MTM5NTc2NzksImlhdCI6MTcxMzk1NzM3OSwianRpIjoiZDBjMDk1OWQtMjlhMy00NmFjLWI4ZGUtZTg2OTc4MmRmM2JkIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy9jYW5keS1zaG9wLXJlYWxtIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjYwY2Y4NmUzLWNjMjMtNGNjYy1iYzc3LTU2ZTQzN2VjZTE5NyIsInR5cCI6IkJlYXJlciIsImF6cCI6ImNhbmR5LXNob3AtY2xpZW50Iiwic2Vzc2lvbl9zdGF0ZSI6Ijk3OTkzZGM4LTg5NWUtNGY1Yi1iMWI3LThjNTdmNDFiNjg5OCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1jYW5keS1zaG9wLXJlYWxtIiwiUk9MRV9BRE1JTiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19LCJjYW5keS1zaG9wLWNsaWVudCI6eyJyb2xlcyI6WyJST0xFX0FETUlOIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwic2lkIjoiOTc5OTNkYzgtODk1ZS00ZjViLWIxYjctOGM1N2Y0MWI2ODk4IiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInByZWZlcnJlZF91c2VybmFtZSI6InZpa3RvcmlhLnZpIiwic2VjdXJpdHlfcm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWNhbmR5LXNob3AtcmVhbG0iLCJST0xFX0FETUlOIiwidW1hX2F1dGhvcml6YXRpb24iXSwiZW1haWwiOiJ2aXZpQGdtYWlsLmNvbSJ9.PNTYx_2ijcsChUQQ6R0u_1kUMUV91NcvSioHhHjK0sRvqgRLpIP0GMoWeNLTTrD6eksRuzkLsavtWG4isxLBEAEW445lBFAN-hM2bYzYcHMnpjgDzG4WW-UbHR9G-_vY6aKGd1AmRPyHE9YdVRbKxV7Ci9ny_Tu_ypcSXj0EZo-_ib7Al8cqU7xwgb8BmPq9J_hBuIplrQ-EjN6mlth826sDjXHcBO-GDO_NysG83xCIsNxiB-q1Q_sz8_PoZOvm2CkTcrgmHv3dzcyy8_-YyGs8fNGnY9R8iH7YWqfnGkP0S6fXOMRm_-rnIO_fdJbvz_b1Tb7ey82EFCIouC0TLw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n    \"name\": \"NewChoco\",\r\n    \"compound\": \"Milk, chocolate, nuts\",\r\n    \"price\": 1.44\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/product/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"product",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJNZl9PZFBnd2tSQ1JiV0haMWFUSFJJeklrSlZHeE05WTV4aFkzMF9sVkVNIn0.eyJleHAiOjE3MTI1NzA1NTEsImlhdCI6MTcxMjU3MDI1MSwianRpIjoiYWFkODIyMzMtMmYwOS00M2NjLWJhMDktN2Q0MTdlOWI1OGRiIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy9jYW5keS1zaG9wLXJlYWxtIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjdkYzliYTVjLWE5NTctNDY5Yi05Y2M1LWYxOWI1NDI5ZTFhOSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImNhbmR5LXNob3AtY2xpZW50Iiwic2Vzc2lvbl9zdGF0ZSI6IjNjYWUwN2FkLTI5ZjktNGUyZC1hZjZhLTgyZDU1ZTljZjUwNyIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1jYW5keS1zaG9wLXJlYWxtIiwiUk9MRV9BRE1JTiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19LCJjYW5keS1zaG9wLWNsaWVudCI6eyJyb2xlcyI6WyJST0xFX0FETUlOIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwic2lkIjoiM2NhZTA3YWQtMjlmOS00ZTJkLWFmNmEtODJkNTVlOWNmNTA3IiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInByZWZlcnJlZF91c2VybmFtZSI6InZpa3RvcmlhLnZpIiwic2VjdXJpdHlfcm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWNhbmR5LXNob3AtcmVhbG0iLCJST0xFX0FETUlOIiwidW1hX2F1dGhvcml6YXRpb24iXSwiZW1haWwiOiJ2aXZpQGdtYWlsLmNvbSJ9.OVKQ91Vwgh1zGQI9CRfVmWZP7Mku_UlJsf12FPyHgnZxsiC1RlKz2LOyEo5HJr8lfqvz5zYcBslBpXRuVYVtTXUxGqktBJPJCyJPit3zCSPrPjAlAU8NJmr5VVWx_XDLqL0_0iISQl9T9J3f6tfdVEy7fvJcAaXyJdIEoI58A2YC-7zoacUeyJuT7D7wYkF2JYQT_el-_fYLekEWoXWg_qCk9aew2XqUEVx1sIASlvSrciF3BCho57_8pSl_1nmkhUGMCOO9JWS-BkDr8CTMY-cATZH4uaKSRHFJTdo97aWZ9PNy9GDCK92uynmuIBTqcviKsPxS1cDZtkomRsYPWQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"invCode\":\"Alenka\",\r\n        \"price\":3.23\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/product/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"product",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
