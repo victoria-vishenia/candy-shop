@@ -1,0 +1,12 @@
+C:\IdeaProjects\candy-shop\product-service\src\main\java\com\inn\productservice\model\Product.java
+C:\IdeaProjects\candy-shop\product-service\src\main\java\com\inn\productservice\controller\ProductController.java
+C:\IdeaProjects\candy-shop\product-service\src\main\java\com\inn\productservice\service\ProductService.java
+C:\IdeaProjects\candy-shop\product-service\src\main\java\com\inn\productservice\config\KafkaConfig.java
+C:\IdeaProjects\candy-shop\product-service\src\main\java\com\inn\productservice\Utils\ProductMapper.java
+C:\IdeaProjects\candy-shop\product-service\src\main\java\com\inn\productservice\dto\InventoryDto.java
+C:\IdeaProjects\candy-shop\product-service\src\main\java\com\inn\productservice\config\SecurityConfig.java
+C:\IdeaProjects\candy-shop\product-service\src\main\java\com\inn\productservice\dto\ProductDto.java
+C:\IdeaProjects\candy-shop\product-service\src\main\java\com\inn\productservice\repository\ProductRepository.java
+C:\IdeaProjects\candy-shop\product-service\src\main\java\com\inn\productservice\serializer\InventoryDtoListSerializer.java
+C:\IdeaProjects\candy-shop\product-service\src\main\java\com\inn\productservice\serializer\InventoryDtoListDeserializer.java
+C:\IdeaProjects\candy-shop\product-service\src\main\java\com\inn\productservice\ProductServiceApplication.java

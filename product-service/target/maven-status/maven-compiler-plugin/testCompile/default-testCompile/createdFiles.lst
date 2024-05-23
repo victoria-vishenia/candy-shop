@@ -1,0 +1,4 @@
+com\inn\productservice\ProductServiceApplicationTests.class
+com\inn\productservice\productTest\ProductControllerTest.class
+com\inn\productservice\productTest\ProductServiceTest.class
+com\inn\productservice\productTest\ProductTestData.class

@@ -1,0 +1,15 @@
+com\inn\productservice\dto\ProductDto$ProductDtoBuilder.class
+com\inn\productservice\model\Product.class
+com\inn\productservice\repository\ProductRepository.class
+com\inn\productservice\dto\InventoryDto.class
+com\inn\productservice\config\SecurityConfig.class
+com\inn\productservice\ProductServiceApplication.class
+com\inn\productservice\serializer\InventoryDtoListDeserializer.class
+com\inn\productservice\Utils\ProductMapper.class
+com\inn\productservice\serializer\InventoryDtoListSerializer.class
+com\inn\productservice\model\Product$ProductBuilder.class
+com\inn\productservice\controller\ProductController.class
+com\inn\productservice\dto\ProductDto.class
+com\inn\productservice\dto\InventoryDto$InventoryDtoBuilder.class
+com\inn\productservice\config\KafkaConfig.class
+com\inn\productservice\service\ProductService.class
